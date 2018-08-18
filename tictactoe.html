@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--tictactoe.html
+    Matthew Stevens
+    May 22, 2018
+-->
+
+<html lang="en">
+<head>
+    <title>Tic Tac Toe</title>
+    <meta charset="utf-8">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+    
+<body onload="initialize()">
+   <!--table-->
+   <table>
+       <!--table header-->
+       <thead>
+           <h1 rowspan="3" style="text-align: center">Tic Tac Toe</h1>
+       </thead>
+       
+       <!--table body-->
+       <tbody>
+           <tr>
+               <td id="zero" name="cell"><input type="button" id="0" class="selection" value="Select" onclick="update(0)"></td>
+               <td id="one" name="cell"><input type="button" id="1" class="selection" value="Select" onclick="update(1)"></td>
+               <td id="two" name="cell"><input type="button" id="2" class="selection" value="Select" onclick="update(2)"></td>
+           </tr>
+           
+           <tr>
+               <td id="three" name="cell"><input type="button" id="3" class="selection" value="Select" onclick="update(3)"></td>
+               <td id="four" name="cell"><input type="button" id="4" class="selection" value="Select" onclick="update(4)"></td>
+               <td id="five" name="cell"><input type="button" id="5" class="selection" value="Select" onclick="update(5)"></td>
+           </tr>
+           
+           <tr>
+               <td id="six" name="cell"><input type="button" id="6" class="selection" value="Select" onclick="update(6)"></td>
+               <td id="seven" name="cell"><input type="button" id="7" class="selection" value="Select" onclick="update(7)"></td>
+               <td id="eight" name="cell"><input type="button" id="8" class="selection" value="Select" onclick="update(8)"></td>
+           </tr>
+       </tbody>
+    </table>
+    
+    <!--current player-->
+    <p id="current">Current Player: Player One</p>
+    
+    <!--player one score-->
+    <p id="p1"></p>
+    
+    <!--player two score-->
+    <p id="p2"></p>
+    
+    <script src="tictactoe.js"></script>
+</body>
+</html>
